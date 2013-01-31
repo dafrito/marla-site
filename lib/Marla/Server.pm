@@ -10,7 +10,7 @@ require Exporter;
 
 our @ISA     = qw(Exporter HTTP::Server::Simple::CGI);
 our @EXPORT  = qw();
-our @VERSION = 1.00;
+our $VERSION = 1.00;
 
 sub set_site {
     my $self = shift;

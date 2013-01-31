@@ -10,7 +10,7 @@ require Exporter;
 
 our @ISA     = qw(Exporter);
 our @EXPORT  = qw();
-our @VERSION = 1.00;
+our $VERSION = 1.00;
 
 sub new {
     my $class = shift;

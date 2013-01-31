@@ -10,7 +10,7 @@ require Exporter;
 
 our @ISA     = qw(Exporter);
 our @EXPORT  = qw();
-our @VERSION = 1.00;
+our $VERSION = 1.00;
 
 sub cat {
     my $file = shift or croak "No file specified";
