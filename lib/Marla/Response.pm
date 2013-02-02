@@ -16,6 +16,8 @@ sub response_404 {
     my $request = shift;
     my $path = shift;
 
+    $path ||= $request->path_info;
+
     return sub {
         print "HTTP/1.1 404 Not found\r\n";
         print $request->header;
