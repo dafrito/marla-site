@@ -52,7 +52,7 @@ sub get_view {
 
     my $name = shift;
     my $view = $self->{views}->{$name} or croak "No view found for name: '$name'";
-    return $view;
+    return $view->(@_);
 }
 
 sub set_view {
@@ -67,7 +67,7 @@ sub get_model {
 
     my $name = shift;
     my $model = $self->{models}->{$name} or croak "No model found for name: '$name'";
-    return $model;
+    return $model->(@_);
 }
 
 sub set_model {
