@@ -2,9 +2,23 @@ TODO Write a one-line description for this project
 
 ### Installation
 
-perl Makefile.PL
-make
-make test
-make install
+First, configure the build:
+
+    perl Makefile.PL
+
+If you want to install under your home directory, set the prefix accordingly:
+
+    perl Makefile.PL PREFIX=~
+
+If you're installing to your home directory, you'll probably want to fix up the
+perl's library path, as shown below:
+
+    export PERL5LIB=$HOME/share/perl5
+
+Once the build is configured, the process continues as usual:
+
+    make
+    make test
+    make install
 
 vim: set tw=80 ft=markdown :
