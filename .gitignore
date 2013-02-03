@@ -1,5 +1,4 @@
 # Build artifacts
-marla-site.spec
 Marla::Site-*.rpm
 marla-site.tar.gz
 /Makefile
@@ -7,6 +6,5 @@ marla-site.tar.gz
 
 /*.rpm
 /*.tar.gz
-/*.spec
 blib/
 pm_to_blib
