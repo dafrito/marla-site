@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-package Marla::Server;
+package Marla::Server::Simple;
 
 use strict;
 use warnings;
